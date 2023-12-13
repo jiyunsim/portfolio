@@ -1,0 +1,321 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 4vh;
+}
+header h1 {
+  width: 10vh;
+}
+
+.gnb {
+  position: fixed;
+  z-index: 100;
+  cursor: pointer;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+  background-color: #01061a;
+}
+
+nav ul {
+  width: 50vh;
+  padding-top: 20px;
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  width: 11vh;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  color: #fff;
+}
+nav ul li a:hover {
+  color: rgb(248, 255, 174);
+  border-bottom: 2px solid #fff;
+}
+/*header끝*/
+
+/*main*/
+.name {
+  font-size: 7vh;
+  font-weight: bold;
+  color: rgb(248, 255, 174);
+}
+
+.intro {
+  width: 100%;
+  height: 1080px;
+  position: relative; /*wave의 기준*/
+  overflow: hidden;
+  width: 1920px;
+  height: 900px;
+  background: url(/images/background.jpg.jpg) no-repeat;
+  text-align: center;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(/images/waveg.png);
+  background-size: 1000px 100px;
+  z-index: 1000;
+}
+.wave1 {
+  bottom: 0;
+  animation: wave 30s linear infinite;
+  opacity: 0.8;
+  z-index: 1000;
+}
+.wave2 {
+  /* opacity: 0.3; */
+  bottom: 0px;
+  animation: wave1 15s linear infinite;
+  animation-delay: 0.5s;
+  z-index: 900;
+  background-image: url(/images/waveg.png);
+}
+.wave3 {
+  opacity: 0.3;
+  bottom: 15px;
+  animation: wave 15s linear infinite;
+  animation-delay: -7s;
+  z-index: 800;
+}
+.wave4 {
+  opacity: 0.3;
+  bottom: 15px;
+  animation: wave1 15s linear infinite;
+  animation-delay: -5s;
+  z-index: 700;
+}
+@keyframes wave {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 1000px;
+  }
+}
+@keyframes wave1 {
+  from {
+    background-position-x: 1000px;
+  }
+  to {
+    background-position-x: 0px;
+  }
+}
+.index-1 {
+  position: relative;
+  padding-top: 300px;
+}
+
+.portfolio {
+  font-size: 15vh;
+  font-weight: bold;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 152, 25),
+    rgb(237, 222, 93)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.introduce {
+  font-size: 2vh;
+  font-weight: bold;
+  background: linear-gradient(
+    to right bottom,
+    rgb(217, 230, 35),
+    rgb(255, 255, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.index-2 {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  padding-top: 100px;
+  display: flex;
+}
+.index-2 li {
+  margin: 10px;
+  color: rgb(240, 152, 25);
+  font-weight: bold;
+}
+/*intro끝*/
+
+.style {
+  color: #01061a;
+  width: 350px;
+  border-bottom: 3px solid #000;
+  margin-top: 30px;
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+}
+.project_detail ul {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.project h1 {
+  font-size: 50px;
+  margin: auto;
+  width: 200px;
+  margin-top: 70px;
+  position: relative;
+}
+.project h1:before {
+  content: "";
+  position: absolute;
+  width: 164px;
+  top: 35px;
+  text-align: center;
+  border-bottom: 15px solid rgb(247, 241, 166);
+  z-index: -1;
+}
+
+.project_index {
+  margin: auto;
+  position: relative;
+  width: 1725px;
+  height: 500px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.project_index:after {
+  position: absolute;
+  top: 80px;
+  right: 3px;
+  content: "";
+  background-color: #edd554;
+  opacity: 0.3;
+  width: 1725px;
+  height: 300px;
+  margin: auto;
+  z-index: -1;
+}
+.project_detail {
+  width: 740px;
+  margin: 100px;
+  float: right;
+}
+
+.project_detail button {
+  background-color: #041a41;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+.project_detail ul {
+  width: 740px;
+}
+
+.project_detail .Profile h2 {
+  width: 200px;
+  height: 160px;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(247, 241, 166);
+  margin: auto;
+  margin-top: 50px;
+}
+
+.font2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+/*project 끝*/
+
+.profile {
+  margin-top: 100px;
+  /* background-color: rgba(187, 200, 245, 0.1);*/
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+  position: relative;
+}
+
+.profile h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  margin: auto;
+  width: 200px;
+  position: relative;
+}
+.profile h1:before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  top: 35px;
+  text-align: center;
+  border-bottom: 15px solid rgb(247, 241, 166);
+  z-index: -1;
+}
+
+.profile_detail {
+  width: 700px;
+  margin: 50px 100px 50px 200px;
+}
+.profile_detail h2 {
+  margin-top: 100px;
+  position: relative;
+}
+.profile_detail h2:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  bottom: 20px;
+  right: 3px;
+  text-align: center;
+  border-bottom: 7px solid rgb(247, 241, 166);
+  z-index: -1;
+}
+.profile_detail div {
+  margin: 50px 0 0 60px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.profile_detail h2 {
+  margin: auto;
+  width: 200px;
+  font-size: 40px;
+}
+strong {
+  font-size: 32px;
+  color: #f3c324;
+}
+.detail-1 {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.detail-2 {
+  width: 550px;
+
+  position: absolute;
+  top: 80px;
+  right: 250px;
+}
+
+.detail-2 ul {
+  margin: 30px;
+}
