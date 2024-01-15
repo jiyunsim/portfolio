@@ -1,0 +1,426 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Pretendard-Regular", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+}
+header h1 {
+  width: 10vh;
+}
+.index {
+  height: 1080px;
+}
+
+.gnb {
+  position: fixed;
+  top: 0%;
+  z-index: 1000;
+  cursor: pointer;
+  width: 100%;
+  height: 9vh;
+  background-color: rgba(28, 15, 73, 0.034);
+}
+nav {
+  cursor: pointer;
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  justify-content: end;
+}
+nav ul {
+  position: fixed;
+  width: 50vh;
+  padding-top: 20px;
+  float: right;
+}
+nav ul li {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  width: 11vh;
+  height: 70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  color: #686165;
+  margin-left: 20px;
+
+}
+nav ul li:hover {
+  color: #e78f99;
+  border-bottom: 4px solid #fff;
+}
+
+/*header끝*/
+
+/*main*/
+.name {
+  padding-top: 40px;
+  font-size: 7vh;
+  font-weight: bold;
+  color: #e78f99;
+  z-index: -1;
+}
+
+
+.index-1 { 
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 300px;
+  text-align: center;
+  animation: fade_in 1s 0.6s both;
+}
+
+.index-background {
+  z-index: -1000;
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  top: 0;
+  left: 0;
+  background-image: url(/images/pink-sky-background-with-crescent-moon.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.index-background img {
+  position: absolute;
+  width:100%;
+  animation: moveBackground 1.5s 0.3s both, fade_in 1s 0.6s both;
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15%);
+  }
+}
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*intro//*/
+
+.portfolio {
+  margin-top: 40px;
+  font-size: 150px;
+  font-weight: bold;
+  color: #686165;
+}
+.introduce {
+  margin-bottom: 100px;
+  font-size: 2vh;
+  font-weight: bold;
+  color: #e78f99;
+}
+
+/*intro끝*/
+
+/*profile*/
+
+.profile {
+  width: 1920px;
+  height: 1000px;
+  padding-top: 30px;
+  font-size: 22px;
+}
+.profile h1 {
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 370px;
+  position: relative;
+  z-index: 1;
+}
+.profile h1::before {
+  content: "";
+  z-index: -1;
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #f0cdd1;
+  border-radius: 50%;
+  border-bottom: 1px solid #f0cdd1;
+}
+.profile_detail {
+  width: 1620px;
+  margin: auto;
+  display: flex;
+}
+.profile_detail h3 {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  font-size: 30px;
+  margin-top: 55px;
+}
+
+.experience {
+  margin-top: 20px;
+}
+.experience li {
+  margin-top: 20px;
+}
+.profile h2 {
+  position: relative;
+  z-index: 1;
+}
+.profile h2::before {
+  content: "";
+  z-index: -1;
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #f0cdd1;
+  border-radius: 50%;
+  border-bottom: 1px solid #f0cdd1;
+}
+.exper_detail {
+  font-size: 18px;
+  text-indent: 15px;
+}
+.profile_detail div {
+  width: 520px;
+  margin: 20px;
+}
+.detail_about h2 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.detail_about {
+  text-align: center;
+}
+
+.typing {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  font-size: 25px;
+  margin: 20px;
+  line-height: 40px;
+}
+.typing-txt{
+  display: none;}
+.typing ul li.on {  
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+.bold {
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.myimg img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.tool h2 {
+  margin-top: 50px;
+}
+.toolimg li {
+  display: inline-block;
+}
+.toolimg li img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.license {
+  text-align: left;
+  font-size: 18px;
+}
+.license ul {
+  margin-top: 40px;
+}
+.license ul li {
+  margin-top: 20px;
+}
+.license ul li span {
+  font-weight: bold;
+}
+
+.number :first-child {
+  font-size: 250px;
+  font-weight: bold;
+  color: rgba(240, 205, 209, 0.5);
+  position: absolute;
+}
+.number :nth-child(2) {
+  font-size: 90px;
+  font-weight: bold;
+  color: rgba(168, 168, 168);
+  position: relative;
+  top: 150px;
+  right: -40px;
+}
+
+.tool img {
+  width: 100px;
+  height: 100px;
+}
+/*profile끝*/
+.project {
+  margin: 0 100px 0 100px;
+  height: 1000px;
+  padding-top: 190px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.number2 {
+  margin: 0 150px 0 100px;
+}
+.number2 :first-child {
+  font-size: 250px;
+  font-weight: bold;
+  color: rgba(240, 205, 209, 0.5);
+  position: absolute;
+}
+.number2 :nth-child(2) {
+  font-size: 90px;
+  font-weight: bold;
+  color: rgba(168, 168, 168);
+  position: relative;
+  top: 150px;
+  right: -40px;
+}
+
+.project div {
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(218, 216, 216);
+}
+
+.project_detail {
+  font-size: 20px;
+  width: 280px;
+  margin: 10px 30px 0 60px;
+  float: left;
+  text-align: left;
+}
+.project_detail  li{
+  margin-top: 15px;
+}
+
+.project_index :first-child {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+}
+.Shortcuts {
+  width: 140px;
+  height: 60px;
+  display: flex;
+}
+
+.webpage {
+  background: url(/images/page.png.png) no-repeat;
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.github {
+  background: url(/images/github.png) no-repeat;
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/**
+ *  Progress Bar
+ */
+.progress {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to right, black, black);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.4s ease-in-out;
+}
+
+/**
+ *  Demo Styles from the Slick Slider
+ *  website
+ */
+
+.content {
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.slider {
+  text-align: center;
+  margin: 30px auto 50px;
+}
+
+.image {
+  margin-top: 120px;
+  padding: 10px;
+}
+
+.slider img {
+  display: block;
+  width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.projectstyle {
+  width: 100%;
+  margin: 10px;
+}
+
+.slick-prev,
+.slick-next {
+  color: transparent;
+  background-color: transparent;
+}
+/*project 끝*/
