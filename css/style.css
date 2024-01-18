@@ -95,7 +95,7 @@ nav ul li:hover {
   height: 1080px;
   top: 0;
   left: 0;
-  background-image: url(./images/pink-sky-background-with-crescent-moon.jpg);
+  background-image: url(/images/pink-sky-background-with-crescent-moon.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -332,11 +332,13 @@ nav ul li:hover {
   margin-top: 15px;
 }
 
+
+
 .project_index :first-child {
   font-size: 30px;
   font-weight: bold;
-  margin: 20px;
-}
+  margin: 20px; }
+
 .Shortcuts {
   width: 140px;
   height: 60px;
@@ -344,14 +346,14 @@ nav ul li:hover {
 }
 
 .webpage {
-  background: url(./images/free-icon-figma-5968705.png) no-repeat;
+  background: url(/images/free-icon-figma-5968705.png) no-repeat;
   background-size: 60px;
   width: 60px;
   height: 60px;
   cursor: pointer;
 }
 .github {
-  background: url(./images/github.png) no-repeat;
+  background: url(/images/github.png) no-repeat;
   background-size: 60px;
   width: 60px;
   height: 60px;
@@ -424,3 +426,4 @@ nav ul li:hover {
   background-color: transparent;
 }
 /*project 끝*/
+
